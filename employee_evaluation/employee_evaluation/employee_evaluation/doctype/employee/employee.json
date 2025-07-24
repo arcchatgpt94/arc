@@ -1,0 +1,21 @@
+{
+ "doctype": "DocType",
+ "name": "Employee",
+ "module": "Employee Evaluation",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "employee_id", "fieldtype": "Data", "label": "Employee ID"},
+  {"fieldname": "employee_name", "fieldtype": "Data", "label": "Employee Name"},
+  {"fieldname": "job_title", "fieldtype": "Data", "label": "Job Title"},
+  {"fieldname": "evaluation_type", "fieldtype": "Select", "label": "Evaluation Type", "options": "سنوي\nنصف سنوي\nشهري"},
+  {"fieldname": "direct_manager", "fieldtype": "Data", "label": "Direct Manager"},
+  {"fieldname": "department_head", "fieldtype": "Data", "label": "Department Head"},
+  {"fieldname": "unit", "fieldtype": "Data", "label": "Unit"},
+  {"fieldname": "office", "fieldtype": "Data", "label": "Office"},
+  {"fieldname": "hire_date", "fieldtype": "Date", "label": "Hire Date"},
+  {"fieldname": "evaluation_date", "fieldtype": "Date", "label": "Evaluation Date"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
+ ]
+}

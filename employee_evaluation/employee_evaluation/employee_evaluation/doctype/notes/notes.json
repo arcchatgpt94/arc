@@ -1,0 +1,14 @@
+{
+ "doctype": "DocType",
+ "name": "Notes",
+ "module": "Employee Evaluation",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "options": "Employee", "label": "Employee"},
+  {"fieldname": "note_type", "fieldtype": "Select", "label": "Note Type", "options": "ملاحظة سلبية\nملاحظة إيجابية"},
+  {"fieldname": "note", "fieldtype": "Text", "label": "Note"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
+ ]
+}

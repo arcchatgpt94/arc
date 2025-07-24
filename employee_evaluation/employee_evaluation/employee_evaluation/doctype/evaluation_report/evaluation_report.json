@@ -1,0 +1,15 @@
+{
+ "doctype": "DocType",
+ "name": "Evaluation Report",
+ "module": "Employee Evaluation",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "options": "Employee", "label": "Employee"},
+  {"fieldname": "total_score", "fieldtype": "Float", "label": "Total Score"},
+  {"fieldname": "final_result", "fieldtype": "Select", "label": "Final Result", "options": "ممتاز\nجيد جداً\nجيد\nمقبول\nضعيف"},
+  {"fieldname": "suggested_actions", "fieldtype": "Text", "label": "Suggested Actions"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
+ ]
+}
