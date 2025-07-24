@@ -1,0 +1,15 @@
+{
+ "doctype": "DocType",
+ "name": "Tasks and Responsibilities",
+ "module": "Employee Evaluation",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "options": "Employee", "label": "Employee"},
+  {"fieldname": "responsibility_description", "fieldtype": "Text", "label": "Responsibility Description"},
+  {"fieldname": "score", "fieldtype": "Float", "label": "Score"},
+  {"fieldname": "weight", "fieldtype": "Float", "label": "Weight"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
+ ]
+}

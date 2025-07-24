@@ -1,0 +1,9 @@
+{
+ "doctype": "Print Format",
+ "name": "Evaluation Report",
+ "module": "Employee Evaluation",
+ "doc_type": "Evaluation Report",
+ "format": "Standard",
+ "html": "evaluation_report.html",
+ "standard": "Yes"
+}
