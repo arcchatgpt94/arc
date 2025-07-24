@@ -1,0 +1,15 @@
+{
+ "doctype": "DocType",
+ "name": "General Evaluation",
+ "module": "Employee Evaluation",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "options": "Employee", "label": "Employee"},
+  {"fieldname": "criteria", "fieldtype": "Text", "label": "Criteria"},
+  {"fieldname": "score", "fieldtype": "Float", "label": "Score"},
+  {"fieldname": "weight", "fieldtype": "Float", "label": "Weight"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
+ ]
+}

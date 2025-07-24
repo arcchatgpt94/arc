@@ -1,0 +1,13 @@
+{
+ "doctype": "DocType",
+ "name": "Recommendations",
+ "module": "Employee Evaluation",
+ "custom": 1,
+ "fields": [
+  {"fieldname": "employee", "fieldtype": "Link", "options": "Employee", "label": "Employee"},
+  {"fieldname": "recommendation_text", "fieldtype": "Text", "label": "Recommendation"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
+ ]
+}
