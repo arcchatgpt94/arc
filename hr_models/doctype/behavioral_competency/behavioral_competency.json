@@ -1,0 +1,17 @@
+{
+ "doctype": "DocType",
+ "name": "Behavioral Competency",
+ "module": "HR Models",
+ "istable": 1,
+ "custom": 0,
+ "fields": [
+  {"fieldname": "competency", "label": "الكفاءة", "fieldtype": "Data", "in_list_view": 1},
+  {"fieldname": "skill", "label": "المهارة", "fieldtype": "Data"},
+  {"fieldname": "indicator", "label": "المؤشر", "fieldtype": "Data"},
+  {"fieldname": "score", "label": "مستوى الإنجاز", "fieldtype": "Select", "options": "1\n2\n3\n4"},
+  {"fieldname": "result", "label": "النتيجة المحققة", "fieldtype": "Float"},
+  {"fieldname": "evidence", "label": "الملاحظات والإثباتات", "fieldtype": "Text"}
+ ],
+ "field_order": ["competency", "skill", "indicator", "score", "result", "evidence"],
+ "permissions": []
+}

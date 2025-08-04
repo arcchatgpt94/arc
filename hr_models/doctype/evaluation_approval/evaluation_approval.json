@@ -1,0 +1,16 @@
+{
+ "doctype": "DocType",
+ "name": "Evaluation Approval",
+ "module": "HR Models",
+ "istable": 1,
+ "custom": 0,
+ "fields": [
+  {"fieldname": "party", "label": "الجهة", "fieldtype": "Select", "options": "الموظف\nالمدير\nالموارد البشرية", "in_list_view": 1},
+  {"fieldname": "status", "label": "الحالة", "fieldtype": "Select", "options": "موافق\nمتحفظ\nرافض"},
+  {"fieldname": "recommendation", "label": "التوصيات", "fieldtype": "Text"},
+  {"fieldname": "recommender", "label": "جهة التوصية", "fieldtype": "Data"},
+  {"fieldname": "recommendation_type", "label": "نوع التوصية", "fieldtype": "Select", "options": "تدريب\nترقية\nنقل\nأخرى"}
+ ],
+ "field_order": ["party", "status", "recommendation", "recommender", "recommendation_type"],
+ "permissions": []
+}

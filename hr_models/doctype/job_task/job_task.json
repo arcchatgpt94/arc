@@ -1,0 +1,18 @@
+{
+ "doctype": "DocType",
+ "name": "Job Task",
+ "module": "HR Models",
+ "istable": 1,
+ "custom": 0,
+ "fields": [
+  {"fieldname": "task_name", "label": "المهمة", "fieldtype": "Data", "in_list_view": 1},
+  {"fieldname": "task_type", "label": "نوع المهمة", "fieldtype": "Select", "options": "تنفيذية\nتطويرية"},
+  {"fieldname": "task_cycle", "label": "زمن دوران المهمة", "fieldtype": "Select", "options": "يومي\nأسبوعي\nشهري\nسنوي"},
+  {"fieldname": "repetition", "label": "عدد مرات التكرار", "fieldtype": "Int"},
+  {"fieldname": "duration_hours", "label": "الزمن اللازم (بالساعة)", "fieldtype": "Float"},
+  {"fieldname": "kpi", "label": "مؤشرات الأداء", "fieldtype": "Data"},
+  {"fieldname": "kpi_type", "label": "نوع المؤشر", "fieldtype": "Select", "options": "نسبة مئوية\nعدد"}
+ ],
+ "field_order": ["task_name", "task_type", "task_cycle", "repetition", "duration_hours", "kpi", "kpi_type"],
+ "permissions": []
+}
