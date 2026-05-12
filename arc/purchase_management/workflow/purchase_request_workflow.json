@@ -1,0 +1,53 @@
+{
+ "creation": "2026-05-12 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Workflow",
+ "document_type": "Purchase Request",
+ "is_active": 1,
+ "name": "Purchase Request Workflow",
+ "override_status": 1,
+ "send_email_alert": 0,
+ "states": [
+  {
+   "allow_edit": "System Manager",
+   "state": "Draft",
+   "doc_status": "0"
+  },
+  {
+   "allow_edit": "System Manager",
+   "state": "Submitted",
+   "doc_status": "0"
+  },
+  {
+   "allow_edit": "System Manager",
+   "state": "Approved",
+   "doc_status": "1"
+  },
+  {
+   "allow_edit": "System Manager",
+   "state": "Rejected",
+   "doc_status": "0"
+  }
+ ],
+ "transitions": [
+  {
+   "action": "Submit",
+   "allowed": "System Manager",
+   "next_state": "Submitted",
+   "state": "Draft"
+  },
+  {
+   "action": "Approve",
+   "allowed": "System Manager",
+   "next_state": "Approved",
+   "state": "Submitted"
+  },
+  {
+   "action": "Reject",
+   "allowed": "System Manager",
+   "next_state": "Rejected",
+   "state": "Submitted"
+  }
+ ],
+ "workflow_data": "{\"workflow\": \"Purchase Request Workflow\"}"
+}
